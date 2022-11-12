@@ -1,0 +1,35 @@
+html {
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgba(255, 245, 233, 0.836);
+    border: solid 2px rgb(88, 87, 87);
+}
+
+h2 {
+    margin-right: 20%;
+}
+
+main {
+    border: solid black 2px;
+}  
+
+header img {
+    width: 700px;
+}
+
+form, #date, #showlist {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 18px;
+}
+
+#showlist {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Wild Rose Finance</title>
+	<script type="text/javascript" src="arrays.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<img src="logo.png">
+	</header>
+	<h3><span id="date"></span></h3>
+	
+	<form id="register" name="register" onsubmit="addToArray();return false">
+		<h2>Information</h2>
+		<table>
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" id="firstname" pattern="[a-zA-Z\s]+" required></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" id="lastname" pattern="[a-zA-Z\s]+" required></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" id="address" required></td>
+			</tr>
+			<tr>
+				<td>Postal Code</td>
+				<td><input type="text" id="postalcode" placeholder="A1A A1A" pattern="[A-Z][0-9][A-Z]\s[0-9][A-Z][0-9]"
+						required></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input type="tel" id="phone" size="10" placeholder="### ### ###"
+						pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}">
+					<input type="radio" id="Personal Phone" name="phone" value="personal-phone">
+					<label for="personal-phone">Personal</label>
+					<input type="radio" id="Business Phone" name="phone" value="business-phone">
+					<label for="business-phone">Business</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" id="email" required="true"></td>
+			</tr>
+		</table>
+		<b>Are you a client?</b><br>
+		<input type="radio" name="client" value="Yes">Yes
+		<input type="radio" name="client" value="No">No<br><br>
+
+		<b>Gender</b><br>
+		<input type="radio" name="gender" value="Male">Male
+		<input type="radio" name="gender" value="Female">Female<br><br>
+
+		<b>Age: </b>
+		<input type="number" id="age" min=18 placeholder="18 & above"><br><br>
+
+		<b>Do you own or rent a home?</b><br>
+		<input type="radio" name="ownorrent" value="Own">Own
+		<input type="radio" name="ownorrent" value="Rent">Rent<br><br>
+
+		<b>Annual Gross Income: </b>
+		<input type="number" id="income" min=0><br><br>
+
+		<b>Please select the items you own: </b><br>
+		<input type="checkbox" name="vehicle" value="Vehicle">Vehicle<br>
+		<input type="checkbox" name="rrsp" value="RRSP">RRSP<br>
+		<input type="checkbox" name="tfsa" value="TFSA">TFSA<br>
+		<input type="checkbox" name="rrif" value="RRIF">RRIF<br>
+		<br>
+		<input type="submit" value="Submit" id="submit">
+	</form>
+	<h3><span id="showlist"></span></h3>
+</body>
+</html>
